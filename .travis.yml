@@ -2,7 +2,7 @@ language: ruby
 install: 
   - gem install bundler
 sudo: false
-cache: bundler
+#cache: bundler
 bundler_args: --without profile
 env:
   - JRUBY_OPTS="-Xcli.debug=true --debug"
