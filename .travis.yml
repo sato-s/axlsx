@@ -6,7 +6,7 @@ sudo: false
 cache: bundler
 bundler_args: --without profile
 env:
-  - JRUBY_OPTS="-Xcli.debug=true --debug"
+  - JRUBY_OPTS="-Xcli.debug=true -Xcext.enabled=true --debug"
 notifications:
   irc: "irc.freenode.org#axlsx"
   email:
@@ -18,8 +18,8 @@ rvm:
   - 1.9.3
   - 2.0
   - 2.1
-  - 2.2.5
-  - rbx
+  - 2.2
+  #- rbx
   - jruby-19mode
   - jruby-9.0.0.0
   - ruby-head
