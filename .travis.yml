@@ -1,4 +1,6 @@
 language: ruby
+install: 
+  - gem install bundler
 sudo: false
 cache: bundler
 bundler_args: --without profile
