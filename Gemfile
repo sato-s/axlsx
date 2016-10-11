@@ -9,7 +9,7 @@ group :test do
 end
 
 group :profile do
-  gem 'ruby-prof'
+  gem 'ruby-prof', :platform => [:mri, :rbx]
 end
 
 platforms :rbx do
